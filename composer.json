@@ -1,0 +1,37 @@
+{
+  "name": "jasonmichels/lift-framework",
+  "description": "Lift is a PHP 7 micro framework for building microservices",
+  "keywords": ["lift", "framework", "php", "php7"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jason Michels",
+      "email": "michelsja@icloud.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "nikic/fast-route": "^1.0",
+    "psr/log": "^1.0",
+    "symfony/http-foundation": "^3.0"
+  },
+  "require-dev": {
+    "phing/phing": "^2.13",
+    "phpunit/phpunit": "^5.1",
+    "mockery/mockery": "0.9.*",
+    "halleck45/php-metrics": "dev-master",
+    "squizlabs/php_codesniffer": "dev-master",
+    "sebastian/phpcpd": "*",
+    "phpmd/phpmd" : "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lift\\Framework\\": "src",
+      "Lift\\Framework\\Tests\\": "tests"
+    },
+    "files": [
+      "src/Http/Response/ResponseHelpers.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}

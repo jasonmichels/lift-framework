@@ -1,0 +1,10 @@
+/node_modules
+/vendor
+.DS_Store
+Thumbs.db
+/.idea
+/build
+build.properties
+docker-compose.yml
+/public
+Dockerfile

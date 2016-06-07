@@ -29,9 +29,7 @@ $app = new App();
 
 $routes = [
     ['httpMethod' => Request::METHOD_GET, 'route' => '/', 'handler' => 'getHomepage'],
-    ['httpMethod' => Request::METHOD_GET, 'route' => '/user/{id:\d+}', 'handler' => 'getUserHandler'],
-    ['httpMethod' => Request::METHOD_GET, 'route' => '/jason', 'handler' => [new Jason(), 'handle']],
-    ['httpMethod' => Request::METHOD_GET, 'route' => '/makejason', 'handler' => 'makeJason'],
+    ['httpMethod' => Request::METHOD_GET, 'route' => '/user/{id:\d+}', 'handler' => 'getUserHandler']
 ];
 
 $app->run($routes);
